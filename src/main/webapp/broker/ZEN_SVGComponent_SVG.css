@@ -1,0 +1,552 @@
+/*** ZEN Style Sheet ***/
+/*** Package:   %ZEN.SVGComponent ***/
+/*** Namespace:   ^^u:\kit\little\release\mgr\ ***/
+/*** Generated: 2009-05-12 12:38:31 ***/
+/* @class="%ZEN.SVGComponent.svgFrame" */
+/* @class="%ZEN.SVGComponent.svgCanvas" */
+/* @class="%ZEN.SVGComponent.svgComponent" */
+/* @class="%ZEN.SVGComponent.chart" */
+
+/* @doc="Background of chart." */
+.chart-background {
+	fill: darkblue;
+	stroke: black;
+	stroke-width: 0.1px;
+}
+
+/* @doc="Plot area of chart." */
+.chart-plotArea {
+	fill: white;
+	stroke: black;
+	stroke-width: 0.1px;
+}
+
+/* @doc="Upper or lower band." */
+.chart-band {
+	fill: #F0F0F0;
+	stroke: none;
+}
+
+/* @doc="Background of legend." */
+.chart-legend {
+	fill: white;
+	stroke: black;
+	stroke-width: 0.1px;
+}
+
+/* @doc="Major grid lines." */
+.chart-majorGridLine { 
+	stroke: black;
+	stroke-width: 0.1px;
+}
+
+/* @doc="Minor grid lines." */
+.chart-minorGridLine { 
+	stroke: black;
+	stroke-width: 0.1px;
+	opacity: 0.5;
+	stroke-dasharray: 0.1,0.1;
+}
+
+/* @doc="Lines within line plots." */
+.chart-seriesLine {
+	stroke-width: 0.25px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+/* @doc="Bars within bar plots." */
+.chart-seriesBar {
+	stroke-width: 0.25px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+/* @doc="Major tick marks." */
+.chart-majorTick { 
+	stroke: black;
+	stroke-width: 1px;
+	opacity: 0.7;
+	stroke-linecap: round;
+}
+
+/* @doc="Minor tick marks." */
+.chart-minorTick { 
+	stroke: black;
+	stroke-width: 1px;
+	opacity: 0.7;
+	stroke-linecap: round;
+}
+
+/* @doc="Chart title." */
+.chart-title { 
+	pointer-events: none;
+	font-size: 4px;
+	fill: yellow;
+	stroke: none;
+}
+
+/* @doc="Labels on x-axis." */
+.chart-xLabel { 
+	pointer-events: none;
+	font-size: 3px;
+	fill: yellow;
+	stroke: none;
+}
+
+/* @doc="Labels on y-axis." */
+.chart-yLabel { 
+	pointer-events: none;
+	font-size: 3px;
+	fill: yellow;
+	stroke: none;
+}
+
+/* @doc="Labels for PieChart slices." */
+.chart-sliceLabel { 
+	pointer-events: none;
+	font-size: 2.8px;
+	fill: black;
+	stroke: none;
+}
+
+/* @doc="Labels within legend box." */
+.chart-legendLabel {
+	pointer-events: none;
+	font-size: 2.5px;
+	fill: black;
+	stroke: none;
+}
+/* @class="%ZEN.SVGComponent.barChart" */
+/* @class="%ZEN.SVGComponent.diffChart" */
+/* @class="%ZEN.SVGComponent.hilowChart" */
+/* @class="%ZEN.SVGComponent.lineChart" */
+/* @class="%ZEN.SVGComponent.pieChart" */
+/* @class="%ZEN.SVGComponent.xyChart" */
+/* @class="%ZEN.SVGComponent.compassButtons" */
+.compassButton {
+	fill: white;
+	stroke: black;
+	stroke-width: 1;
+}
+
+.compassButtonHover {
+	fill: #FFFFB0;
+	stroke: black;
+	stroke-width: 2;
+	cursor: pointer;
+}
+
+.compassIcon {
+	fill: none;
+	stroke: black;
+	stroke-width: 1;
+}
+/* @class="%ZEN.SVGComponent.meter" */
+
+/* labels for meters */
+.meter-label {
+	pointer-events: none;
+	font-size: 8pt;
+	fill: black;
+	stroke: none;
+}
+
+/* @class="%ZEN.SVGComponent.fuelGauge" */
+.fuelGauge-body {
+	stroke: black;
+	stroke-width: 1px;
+	stroke-linejoin: round;
+}
+
+.fuelGauge-body2 {
+	stroke: black;
+	stroke-width: 1px;
+	stroke-linejoin: round;
+}
+
+.fuelGauge-tick {
+	fill: none;
+	stroke: black;
+	stroke-width: 1px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+
+.fuelGauge-needle {
+	fill: none;
+	stroke: red;
+	stroke-width: 2px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+
+.fuelGauge-shadow {
+	fill: none;
+	stroke: black;
+	stroke-width: 1.8px;
+	opacity: 0.1;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+
+.fuelGauge-lamp {
+	stroke: #909090;
+	stroke-width: 0.4;
+}
+
+.fuelGauge-levelTextBox {
+	stroke: black;
+	stroke-width: 0.8;
+}
+
+.fuelGauge-levelText {
+	pointer-events: none;
+	font-size: 6pt;
+	fill: black;
+	font-weight: bold;
+	stroke: none;
+	font-family: courier-new;
+}
+
+.fuelGauge-levelTextNeg {
+	pointer-events: none;
+	font-size: 6pt;
+	fill: red;
+	font-weight: bold;
+	stroke: none;
+	font-family: courier-new;
+}
+
+.fuelGauge-logoText {
+	pointer-events: none;
+	font-size: 5pt;
+	fill: gray;
+	stroke: none;
+	font-family: tahoma verdana;
+}
+/* @class="%ZEN.SVGComponent.indicatorLamp" */
+.indicatorLamp-body {
+	stroke: black;
+	stroke-width: 1px;
+}
+
+.indicatorLamp-text {
+	pointer-events: none;
+	font-size: 10pt;
+	fill: black;
+	stroke: none;
+	font-weight: bold;
+}
+
+/* @class="%ZEN.SVGComponent.lightBar" */
+.lightBar-body {
+	stroke: black;
+	stroke-width: 1px;
+}
+
+.lightBar-lampON {
+	stroke: black;
+	stroke-width: 1px;
+}
+
+.lightBar-lampOFF {
+	stroke: black;
+	stroke-width: 1px;
+}
+
+/* indicator */
+.lightBar-lamp {
+	stroke: #505050;
+	stroke-width: 0.4;
+}
+/* @class="%ZEN.SVGComponent.slider" */
+.slider-body {
+	stroke-width: 1px;
+	stroke: black;
+	fill: darkgray;
+	opacity: 0.75;
+}
+
+.slider-groove {
+	stroke: black;
+	stroke-width: 0.25px;
+	fill: gray;
+}
+
+.slider-thumb {
+	stroke: black;
+	stroke-width: 0.25px;
+	fill: #8080FF;
+	stroke-linejoin: round;
+}
+
+.slider-thumbHover {
+	stroke: black;
+	stroke-width: 0.25px;
+	fill: #FFFFB0;
+	cursor: pointer;
+	stroke-linejoin: round;
+}
+
+.slider-button {
+	stroke: black;
+	stroke-width: 0.25px;
+	fill: #8080FF;
+	stroke-linejoin: round;
+}
+
+.slider-buttonHover {
+	stroke: black;
+	stroke-width: 0.5px;
+	stroke-linejoin: round;
+	fill: #FFFFB0;
+	cursor: pointer;
+}
+
+.slider-tick {
+	stroke: black;
+	stroke-width: 1px;
+	opacity: 0.5;
+	fill: none;
+	stroke-linecap: round;
+}
+/* @class="%ZEN.SVGComponent.smiley" */
+.smiley-face {
+	stroke: black;
+	stroke-width: 0.5px;
+}
+
+.smiley-eye {
+	fill: none;
+	stroke: black;
+	stroke-width: 2px;
+}
+
+.smiley-mouth {
+	fill: none;
+	stroke: black;
+	stroke-width: 2px;
+	stroke-linecap: round;
+}
+/* @class="%ZEN.SVGComponent.speedometer" */
+.speedometer-body {
+	stroke: black;
+	stroke-width: 1px;
+	stroke-linejoin: round;
+}
+
+.speedometer-body2 {
+	stroke: black;
+	stroke-width: 0.8px;
+	stroke-linejoin: round;
+}
+
+.speedometer-tickThin {
+	fill: none;
+	stroke: #202020;
+	stroke-width: 1px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+
+.speedometer-tickThick {
+	fill: none;
+	stroke: black;
+	stroke-width: 2px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+
+.speedometer-needle {
+	fill: red;
+	stroke: black;
+	stroke-width: 1px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+
+.speedometer-shadow {
+	fill: black;
+	stroke: black;
+	stroke-width: 1px;
+	opacity: 0.1;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+
+.speedometer-lamp {
+	stroke: #404040;
+	stroke-width: 0.4;
+}
+
+.speedometer-levelTextBox {
+	stroke: black;
+	stroke-width: 0.8;
+}
+
+.speedometer-levelText {
+	pointer-events: none;
+	font-size: 6pt;
+	fill: black;
+	font-weight: bold;
+	stroke: none;
+	font-family: courier-new;
+}
+.speedometer-levelTextNeg {
+	pointer-events: none;
+	font-size: 6pt;
+	fill: red;
+	font-weight: bold;
+	stroke: none;
+	font-family: courier-new;
+}
+
+.speedometer-logoText {
+	pointer-events: none;
+	font-size: 5pt;
+	fill: gray;
+	stroke: none;
+	font-family: tahoma verdana;
+}
+/* @class="%ZEN.SVGComponent.trafficLight" */
+.trafficLight-body {
+	stroke: black;
+	stroke-width: 1px;
+}
+
+.trafficLight-lamp {
+	stroke: black;
+	stroke-width: 1px;
+}
+
+/* @class="%ZEN.SVGComponent.ownerDraw" */
+/* @class="%ZEN.SVGComponent.radialNavigator" */
+
+.rnavBackground {
+	fill: #CCDDFF;
+	stroke: gray;
+	stroke-width: 0.5;
+}
+
+/* line from title to main node */
+.rnavTitleConnector {
+	fill: none;
+	stroke: gray;
+	stroke-width: 0.5;
+	stroke-dasharray: 0.4,0.4;
+}
+
+/* main title */
+.rnavTitle {
+	fill: black;
+	stroke: none;
+	font-size: 4pt;
+	font-weight: bold;
+}
+
+/* label for node */
+.rnavLabel {
+	fill: black;
+	fill-opacity: 0.8;
+	stroke: none;
+	font-size: 2.5pt;
+}
+
+.rnavLabelHilight {
+	fill: red;
+	stroke: none;
+	font-size: 3pt;
+	font-weight: bold;
+}
+
+.rnavConnector {
+	fill: none;
+	stroke: black;
+	stroke-width: 0.5;
+}
+
+.rnavHub {
+	stroke: black;
+	stroke-width: 0.5;
+	fill: green;
+}
+
+.rnavHubHilight {
+	stroke: black;
+	stroke-width: 1;
+	fill: red;
+}
+
+.rnavHubSelected {
+	stroke: blue;
+	stroke-width: 1;
+	fill: yellow;
+}
+
+.rnavNode {
+	stroke: black;
+	stroke-width: 0.5;
+	fill: blue;
+}
+
+.rnavNodeHilight {
+	stroke: black;
+	stroke-width: 0.8;
+	fill: red;
+}
+
+.rnavNodeSelected {
+	stroke: blue;
+	stroke-width: 0.8;
+	fill: yellow;
+}
+
+/* @class="%ZEN.SVGComponent.rect" */
+.rect {
+	fill: blue;
+	stroke: orange;
+	opacity: 0.5;
+}
+/* @class="%ZEN.SVGComponent.sprite" */
+.sprite {
+	fill: white;
+	stroke: darkblue;
+	stroke-width: 2px;
+}
+.spriteShadow {
+	fill: black;
+	stroke: black;
+	opacity: 0.5;
+	stroke-width: 1px;
+}
+.inputPort {
+	fill: lightblue;
+	stroke: darkblue;
+	stroke-width: 1px;
+}
+.outputPort {
+	fill: lightblue;
+	stroke: darkblue;
+	stroke-width: 1px;
+}
+
+.sprite-caption {
+	pointer-events: none;
+	font-size: 10pt;
+	fill: black;
+	stroke: none;
+	font-family: "lucida sans unicode";
+}
+
+/* @class="%ZEN.SVGComponent.svgGroup" */
+/* @class="%ZEN.SVGComponent.svgSpacer" */
+/* @class="%ZEN.SVGComponent.svgObject" */
+/* @class="%ZEN.SVGComponent.connector" */
+.connector {
+	fill: none;
+	stroke: darkblue;
+	stroke-width: 1px;
+}
+/* @class="%ZEN.SVGComponent.port" */
+/* EOF */

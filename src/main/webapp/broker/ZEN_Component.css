@@ -1,0 +1,2135 @@
+/*** ZEN Style Sheet ***/
+/*** Package:   %ZEN.Component ***/
+/*** Namespace:   ^^u:\kit\little\release\mgr\ ***/
+/*** Generated: 2009-05-12 12:40:51 ***/
+/* @class="%ZEN.Component.object" */
+/* @class="%ZEN.Component.component" */
+/* @doc="Default style for labels." */
+.zenLabel {
+	padding-right: 3px;
+}
+
+/* @doc="Default style for labels for disabled components." */
+.zenLabelDisabled {
+	padding-right: 3px;
+	color: gray;
+}
+
+/* @doc="Default style for hint text." */
+.zenHint {
+	font-size: 0.8em;
+}
+
+/* @doc="Default label style for required fields." */
+.zenRequired {
+	font-weight: bold;
+	padding-right: 3px;
+}
+
+/* @doc="Default after text for required fields." */
+.zenRequired:after {
+	content: " *";
+}
+
+/* @doc="Style for components with invalid values." */
+.zenInvalid {
+	background: #FFA0A0;
+}
+
+/* @doc="Style for error messages for controls." */
+.zenError {
+	color: red;
+	font-size: 90%;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.zenError:before {
+	content: "[";
+}
+.zenError:after {
+	content: "]";
+}
+
+/* transparent overlay */
+.zenOverlay {
+	border: 1px dotted darkblue;
+	position: fixed;
+	z-index: 2;
+	background: none;
+}
+
+.zenOverlaySelected {
+	border: 2px solid darkblue;
+	position: fixed;
+	z-index: 2;
+	background: none;
+}
+
+/* @doc="Progress bar indicator." */
+.zenProgressBar {
+	border: 1px solid black;
+	background: #DDDDFF;
+	table-layout: fixed;
+}
+
+/* @doc="Thumb of progress bar indicator." */
+.zenProgressBarThumb {
+	border: 1px solid black;
+	background: blue;
+}
+
+/* @class="%ZEN.Component.abstractGroup" */
+/* @class="%ZEN.Component.activeGroup" */
+/* @doc="Enclosing div for active group." */
+.activeGroup {
+	z-index: -100;
+	overflow: hidden;
+}
+/* @class="%ZEN.Component.activeHGroup" */
+.activeHGroup {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	border:none;
+}
+
+.zenHPaneHandle {
+	background-image:url(/csp/broker/images/hHandleGrad.png);
+	background-color:black;
+	background-repeat:repeat-y;
+	border:none;
+}
+
+/* @class="%ZEN.Component.activeVGroup" */
+.activeVGroup {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	border:none;
+}
+
+.zenVPaneHandle {
+	background-image:url(/csp/broker/images/vHandleGrad.png);
+	background-color:black;
+	background-repeat:repeat-x;
+	border:none;
+}
+
+/* @class="%ZEN.Component.corkboard" */
+/* @doc="Enclosing div for desktop group." */
+.corkboardGroup {
+	position:absolute;
+	overflow:auto;
+	width:100%;
+	height:1;
+}
+/* @class="%ZEN.Component.desktop" */
+/* @doc="Enclosing div for desktop group." */
+.desktopGroup {
+	position:absolute;
+	overflow:auto;
+	width:100%;
+	height:1;
+}
+/* @class="%ZEN.Component.group" */
+/* @doc="Table used by groups." */
+table.group {
+	padding: 0px;
+}
+
+/* @doc="Cell within table used by groups." */
+table.group td {
+	padding: 0px;
+}
+
+/* @doc="Header within table used by groups." */
+table.group th {
+	padding: 0px;
+}
+
+/* @doc="Style for td containing component label in a vertical group." */
+.vtLabelLeft {
+	text-align: right;
+}
+
+/* @doc="Style for td containing component label in a horizontal group." */
+.hzLabelLeft {
+	text-align: right;
+}
+
+/* @class="%ZEN.Component.abstractPage" */
+/* @doc="Style applied to body of page." */
+body {
+	margin: 0px;
+}
+
+#zenMouseTrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: transparent;
+}
+
+/* @doc="Style applied to wrapper around SVG frames." */
+.svgFrame {
+	border: 1px black solid;
+	background: white;
+}
+
+/* @class="%ZEN.Component.page" */
+/* @class="%ZEN.Component.buttonBar" */
+/* @doc="Enclosing div for COMP_NAME." */
+.buttonBar {
+	 display:block;
+     background: #e0e0e0;
+}
+/* @class="%ZEN.Component.composite" */
+/* @class="%ZEN.Component.tableNavigator" */
+.tn-pageLabel {
+	font-size: 0.75em;
+	color: darkblue;
+	margin-right: 5px;
+	margin-left: 2px;
+}
+/* @class="%ZEN.Component.contextMenu" */
+/* @doc="Enclosing div for COMP_NAME." */
+.contextMenu {
+     display:none;
+     position:absolute;
+     background-color: white;
+     border:2px outset #b0b0b0;
+     padding: 2px;
+     width:150;
+  }
+
+  .shadow {
+      background-image: url(/csp/broker/images/shadow.png);
+  }
+/* @class="%ZEN.Component.csComboBox" */
+/* @doc="Enclosing div for csComboBox." */
+.csComboBox {
+    cursor:pointer;
+    height:22px;
+    width:150px;
+    background: #e0e0e0;
+    color: black;
+}
+  
+.csComboBoxText {
+    border:1px solid black;
+    background:#f0f0f0;
+    color:black;
+}
+/* @class="%ZEN.Component.csMenuBar" */
+.csMenuBar {
+	 display:block;
+     background-color:white;
+     border:1px solid blue;
+     height:20; 
+     width:100%;
+}
+/* @class="%ZEN.Component.csMenuBarItem" */
+.csMenuBarItem {
+    display:inline;
+    cursor:pointer;
+    font: 12px sans-serif;
+    background: white;
+    color: black;
+}
+/* @class="%ZEN.Component.csMenuItem" */
+/* @doc="Enclosing div for COMP_NAME." */
+.csMenuItem {
+    position:absolute;
+    cursor:pointer;
+    font:12px sans-serif;
+    background:white;
+    color:black;
+    height:20px;
+}
+/* @class="%ZEN.Component.dragGroup" */
+/* @doc="Enclosing div for drag group." */
+.dragGroup {
+	position: absolute;
+	border: 1px solid gray;
+	background: white;
+	overflow:hidden;
+}
+
+/* @doc="div for drag group header." */
+.dragHeader {
+	border-bottom: 1px solid #808080;
+	background: #23242C;
+	background-image: url(/csp/broker/images/grayDragHeader.png);
+	background-repeat: repeat-x;
+	cursor: move;
+	color: white;
+    font-family: sans-serif;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* @doc="div for drag group header." */
+.dragHeaderText {
+    font-family: sans-serif;
+    font-weight:bold;
+    font-size:14px;
+	color: #000066;
+}
+
+/* @doc="div for drag group header." */
+.dragChildren {
+	width:100%;
+	height:100%
+	overflow:auto; 
+    margin: 1px;
+}
+
+/* @class="%ZEN.Component.expando" */
+/* @doc="Layout for node caption." */
+.expandoTable {
+}
+
+/* @doc="div element around node caption." */
+.expandoNode {
+}
+
+/* @doc="a element around node image and caption." */
+.expandoNode a {
+	color: black;
+	border: none;
+	text-decoration: none;
+}
+
+/* @doc="Mouse over expando caption." */
+.expandoNode a:hover {
+	color: blue;
+	background: #FFEEAA;
+}
+
+.expandoNode a.menuItem:link, .expandoNode a.menuItem:visited, .expandoNode a.menuItem:active {
+}
+
+/* @doc="a element around node image and caption." */
+.expandoFramed a {
+	color: black;
+	border: none;
+	text-decoration: none;
+}
+
+/* @doc="Mouse over expando caption, framed mode." */
+.expandoFramed a:hover {
+	color: blue;
+	background: #FFEEAA;
+}
+
+.expandoFramed a.menuItem:link, .expandoFramed a.menuItem:visited, .expandoFramed a.menuItem:active {
+}
+
+/* @doc="Image for expando node." */
+.expandoImg {
+	border: none;
+}
+
+/* @doc="div wrapper around node children." */
+.expandoChildren {
+}
+
+/* @doc="div element around title frame in framed mode." */
+.expandoFramed {
+	font-family: "lucida sans unicode";
+	width: 100%;
+	border: 1px solid black;
+	padding: 1px;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="div wrapper around node children in framed mode." */
+.expandoFramedChildren {
+	width: 100%;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 1px;
+}
+
+/* @class="%ZEN.Component.fieldSet" */
+/* @doc="Style for fieldSet." */
+.fieldSet {
+}
+
+.fieldSet legend {
+}
+
+/* @doc=="Style for disabled fieldSet." */
+.fieldSetDisabled {
+	color: #101010;
+	background: #E0E0E0;
+}
+
+/* @doc=="Style for disabled fieldSet legend." */
+.fieldSetDisabled legend {
+	color: #101010;
+	background: #E0E0E0;
+}
+
+/* @class="%ZEN.Component.form" */
+/* @class="%ZEN.Component.dynaForm" */
+/* @class="%ZEN.Component.hgroup" */
+/* @class="%ZEN.Component.menu" */
+/* @doc="Table used for menus." */
+.menuTable {
+	border: 1px solid darkblue;
+	font-family: verdana;
+	padding: 0px;
+	background: white;
+}
+
+/* @doc="Table used for sub-menus." */
+.submenu {
+	background: white;
+}
+
+/* @class="%ZEN.Component.hmenu" */
+.hmenuTable {
+	background: white;
+	border-bottom: 1px solid darkblue;
+	font-family: verdana;
+	padding: 0px;
+}
+
+/* @class="%ZEN.Component.vmenu" */
+
+/* style for enc div */
+.vmenu {
+	height: 100%;
+	padding: 0px;
+}
+
+/* style for layout table */
+.vmenuTable {
+	border: 1px solid darkblue;
+	font-family: verdana;
+	padding: 0px;
+}
+
+/* @class="%ZEN.Component.modalGroup" */
+/* @doc="Style for modalGroup" */
+.modalGroup {
+	position: absolute;
+	border-top: 1px lightblue solid;
+	border-left: 1px lightblue solid;
+	border-right: 2px darkblue solid;
+	border-bottom: 2px darkblue solid;
+	background: white;
+}
+
+/* @doc="Title bar for modal group" */
+.modalGroupTitle {
+	border-bottom: 1px black solid;
+	background: darkblue;
+	padding: 0px;
+	cursor: move;
+}
+
+.modalGroupTitle table {
+	border: 1px solid darkblue;
+}
+
+.modalGroupTitle td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 0px;
+	border: 1px solid darkblue;
+	font-weight: bold;
+	color: white;
+}
+
+/* @doc="Close button for modalGroup" */
+.modalGroupCloseButton {
+	color: black;
+	font-family: verdana;
+	font-size: 5pt;
+	height: 100%;
+	font-weight: bold;
+	padding: 0px;
+}
+
+/* @doc="Body of modal group" */
+.modalGroupBody {
+	padding: 3px;
+	background: #c5d6d6;
+}
+
+/* @doc="OK button holder for MsgBox" */
+.modalGroupFooter {
+	padding: 3px;
+	padding-top: 10px;
+	background: #c5d6d6;
+	text-align: center;
+}
+
+.modalGroupFooter input {
+	width: 7.0em;
+	font-size: 0.8em;
+}
+
+/* @class="%ZEN.Component.pane" */
+/* @class="%ZEN.Component.repeatingGroup" */
+/* @doc="Unselected grouping within a repeating group." */
+.repeatingGroup {
+}
+
+/* @doc="Selected grouping within a repeating group." */
+.repeatingGroupSelected {
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+}
+/* @class="%ZEN.Component.tab" */
+/* @class="%ZEN.Component.tabFrame" */
+/* @doc="Enclosing div for tabFrame." */
+ .tabFrame {
+    width:100%;
+    height:1px;
+    background:#e0e0e0;
+    overflow:hidden;
+  }
+  
+  .tabMenu {
+    background:#005f5f;
+    width:100%;
+    height:50px;
+    font-family:"Arial Black";
+    font-size:14px;
+  }
+
+  .tabEdge {
+    background:#000011;
+  }
+/* @class="%ZEN.Component.tabGroup" */
+
+/* @doc="Wrapper for body of tabgroup, when tab bar is shown." */
+.tabGroupBody {
+	background: white;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	height: 400px;
+}
+
+/* @doc="Container of tab bar buttons." */
+table.tabGroupBar {
+	font-size: 1.0em;
+}
+
+/* @doc="Individual tab bar button in On state." */
+td.tabGroupButtonOn {
+	background: white;
+	border-top: 1px solid black;
+	border-bottom: none;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	font-weight: bold;
+	padding-right: 5px;
+	padding-left: 5px;
+	cursor: pointer;
+	-moz-border-radius-topleft:6px;
+	-moz-border-radius-topright:6px;
+}
+
+/* @doc="Individual tab bar button in Off state." */
+td.tabGroupButtonOff {
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	padding-right: 5px;
+	padding-left: 5px;
+	cursor: pointer;
+	-moz-border-radius-topleft:6px;
+	-moz-border-radius-topright:6px;
+}
+
+/* @doc="Individual tab bar button in Disabled state." */
+td.tabGroupButtonDisabled {
+	background: #AAAAAA;
+	color: gray;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	padding-right: 5px;
+	padding-left: 5px;
+	-moz-border-radius-topleft:6px;
+	-moz-border-radius-topright:6px;
+}
+
+/* @doc="Link within a tab button." */
+td.tabGroupButtonOn a,td.tabGroupButtonOff a,td.tabGroupButtonDisabled a {
+	color: black;
+	text-decoration: none;
+}
+
+td.tabGroupButtonOff:hover {
+	background: #FFFFA0;
+}
+
+/* @doc="Extra space on edges of tab bar." */
+.tabGroupExtra {
+	border-bottom: 1px solid black;
+	background: transparent;
+	width: 100%;
+}
+
+/* @doc="Container for gaps between tabs." */
+.tabGroupGapTd {
+	border-bottom: 1px solid black;
+	background: transparent;
+	empty-cells: show;
+}
+
+/* @doc="The width of this selector controls the gap between tabs in the tab bar." */
+.tabGroupGap {
+	width: 4px;
+}
+
+/* @class="%ZEN.Component.lookoutMenu" */
+
+/* @doc="Style for lookoutMenu enclosing div." */
+.lookoutMenu {
+	height: 100%;
+	padding: 0px;
+	position: relative;
+}
+
+/* @doc="Style for lookoutMenu children div." */
+.lookoutMenuChildren {
+}
+
+/* @doc="Button within lookoutMenu." */
+.lookoutButton {
+	position: absolute;
+	padding: 3px;
+}
+
+/* @doc="Style for enclosing div for tab within lookoutMenu." */ 
+.lookoutTab {
+	position: absolute;
+	padding: 1px;
+	background: darkgray;
+	overflow: auto;
+}
+
+/* @doc="Style for grip within lookoutMenu." */ 
+.lookoutGrip {
+	color: white;
+	background: darkblue;
+	border: 1px solid black;
+	width: 100%;
+}
+
+/* @class="%ZEN.Component.vgroup" */
+/* @class="%ZEN.Component.buttonBarItem" */
+/* @doc="Enclosing div for COMP_NAME." */
+.buttonBarItem {
+    display:block;
+    cursor:pointer;
+    font: 12px sans-serif;
+    background: #e0e0e0;
+    color: black;
+}
+
+.zenToolTip {
+    background: white;
+    border:2px ridge #0000aa;
+    font:12px sans-serif;
+}
+
+/* @class="%ZEN.Component.buttonView" */
+
+/* @doc="Table used to group buttons." */
+.bvwTable {
+	border: 1px solid black;
+	font-family: lucida sans unicode, verdana, sans-serif;
+	table-layout: fixed;
+	width: 100%;
+	background: #D0D0D0;
+	font-size: 0.8em;
+}
+
+/* @doc="Item within buttonView." */
+.bvwItem {
+	border: 1px solid black;
+	width: 125px;
+	overflow: hidden;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Selected item within buttonView." */
+.bvwItemSelected {
+	border: 1px solid black;
+	background: #000040;
+	background-image: url(/csp/broker/images/grad-blue-10x30.png);
+	background-repeat: repeat-x;
+	width: 125px;
+	overflow: hidden;
+}
+
+/* @doc="Reset button within buttonView." */
+.bvwItemReset {
+	border: 1px solid black;
+	background: #404000;
+	background-image: url(/csp/broker/images/grad-yellow-10x100.png);
+	background-repeat: repeat-x;
+	width: 125px;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+/* @doc="Disabled item within buttonView." */
+.bvwItemDisabled, .bvwItemDisabledAlways {
+	border: 1px solid gray;
+	width: 125px;
+	overflow: hidden;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+}
+
+.bvwTable a {
+	text-align: center;
+	display: block;
+	padding: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.bvwItem a, .bvwItemReset a {
+	color: black;
+}
+
+.bvwItemSelected a {
+	color: white;
+}
+
+.bvwItemDisabled a, .bvwItemDisabledAlways a {
+	color: #808080;
+}
+
+.bvwTable a:link, .bvwTable a:visited {
+	text-decoration: none;
+}
+
+.bvwItem a:hover,.bvwItemReset a:hover {
+	background: #FFEEAA;
+	color: darkblue;
+	height: 100%;
+}
+
+.bvwItemSelected a:hover {
+	color: #FFEEAA;
+}
+
+/* @class="%ZEN.Component.colorPane" */
+table.colorPane {
+	background: silver;
+	border: 1px solid black;
+	font-family: arial;
+	font-size: 0.8em;
+	padding: 1px;
+}
+
+table.colorPane td {
+	padding: 0px;
+}
+
+.colorPaneRotator {
+	border: 1px black solid;
+	cursor: pointer;
+}
+
+.colorPaneCell {
+	border: 1px silver solid;
+	cursor: pointer;
+}
+
+.colorPaneCellSelected1 {
+	border: 1px green solid;
+	cursor: pointer;
+}
+.colorPaneCellSelected2 {
+	border: 1px red solid;
+	cursor: pointer;
+}
+.colorPaneCellSelected3 {
+	border: 1px blue solid;
+	cursor: pointer;
+}
+
+/* @class="%ZEN.Component.control" */
+/* @class="%ZEN.Component.abstractListBox" */
+
+/* @doc="Wrapper for listBox." */
+.listBox {
+	color: black;
+	background: white;
+	border: 1px black solid;
+	width: 100%;
+	height: 100px;
+	overflow: auto;
+}
+
+/* @doc="Style for disabled list boxes." */
+.listBoxDisabled {
+	color: black;
+	background: darkgray;
+	border: 1px black solid;
+	width: 100%;
+	height: 100px;
+	overflow: auto;
+}
+
+/* @doc="Item within listBox." */
+.listBoxItem {
+	white-space: nowrap;
+	width: 100%;
+	color: black;
+	/* ie does not handle transparent */
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+/* @doc="Selected item within listBox." */
+.listBoxItemSelected {
+	white-space: nowrap;
+	width: 100%;
+	color: black;
+	background: #E0E0E0;
+	font-weight: bold;
+	border: 1px dotted #202060;
+	cursor: pointer;
+}
+
+/* @doc="Selected item with focus within listBox." */
+.listBoxItemFocus {
+	white-space: nowrap;
+	width: 100%;
+	font-weight: bold;
+	color: white;
+	background: #5050F0;
+	background-image: url(/csp/broker/images/grad-blue-10x30.png);
+	background-repeat: repeat-x;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.listBoxItem:hover, .listBoxItemSelected:hover, .listBoxItemFocus:hover {
+	color: red;
+}
+
+/* no hover when disabled */
+.listBoxDisabled .listBoxItem:hover {
+	color: black;
+	background: darkgray;
+}
+
+.listBoxDisabled .listBoxItemSelected, .listBoxDisabled .listBoxItemSelected:hover, .listBoxDisabled .listBoxItemFocus {
+	white-space: nowrap;
+	width: 100%;
+	color: gray;
+	background: darkblue;
+	font-weight: bold;
+}
+
+/* @class="%ZEN.Component.dataListBox" */
+
+/* @class="%ZEN.Component.listBox" */
+/* @class="%ZEN.Component.button" */
+/* @doc="Style for button (input)." */
+.button {
+}
+/* @class="%ZEN.Component.submit" */
+/* @class="%ZEN.Component.calendar" */
+/* @doc="Outer table for calendar." */
+table.calendarOutline {
+	border: 1px black solid;
+	text-align: center;
+	background: white;
+}
+
+/* @doc="Inner table for calendar." */
+table.calendar {
+	border: 1px black solid;
+	text-align: center;
+}
+
+/* @doc="Gap (td) between the year and month elements." */
+.calendarGap {
+	background: #F0F0F0;
+}
+
+/* @doc="Style for month and year when calendar is in fixedMonth mode." */
+span.calendarLabel {
+	padding-left: 2px;
+	padding-right: 2px;
+	font-weight: bold;
+	color: darkblue;
+}
+ 
+/* @doc="Table headers for calendar." */
+table.calendar th {
+	border-bottom: 1px gray solid;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-weight: bold;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Disabled table headers for calendar." */
+table.calendar th.calendarDisabled {
+	color: #808080;
+	background: #E0E0E0;
+}
+
+/* @doc="Empty cells within calendar." */
+table.calendar td.calendarEmpty {
+	border-bottom: 1px gray solid;
+	border-right: 1px gray solid;
+	padding-left: 2px;
+	padding-right: 2px;
+	background: #F0F0FF;
+}
+
+/* each day of week can have its own style */
+table.calendar td.calendarDay0,
+table.calendar td.calendarDay1,
+table.calendar td.calendarDay2,
+table.calendar td.calendarDay3,
+table.calendar td.calendarDay4,
+table.calendar td.calendarDay5,
+table.calendar td.calendarDay6
+{
+	border-bottom: 1px gray solid;
+	border-right: 1px gray solid;
+	padding-left: 2px;
+	padding-right: 2px;
+	color: darkblue;
+	cursor: pointer;
+}
+
+/* @doc="Selected cell in calendar." */
+table.calendar td.calendarSelected {
+	border-bottom: 1px gray solid;
+	border-right: 1px gray solid;
+	padding-left: 1px;
+	padding-right: 1px;
+	font-weight: bold;
+	color: black;
+	cursor: pointer;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-yellow-10x100.png);
+	background-repeat: repeat-x;
+}
+
+table.calendar td.calendarSelected:hover {
+	background: orange;
+}
+
+table.calendar td.calendarDay0:hover,
+table.calendar td.calendarDay1:hover,
+table.calendar td.calendarDay2:hover,
+table.calendar td.calendarDay3:hover,
+table.calendar td.calendarDay4:hover,
+table.calendar td.calendarDay5:hover,
+table.calendar td.calendarDay6:hover
+{
+	background: orange;
+	border-bottom: 1px gray solid;
+	border-right: 1px gray solid;
+	padding-left: 1px;
+	padding-right: 1px;
+	font-weight: bold;
+	color: darkblue;
+	cursor: pointer;
+}
+
+/* @doc="Current day in calendar." */
+table.calendar td.calendarToday {
+	border-bottom: 1px gray solid;
+	border-right: 1px gray solid;
+	padding-left: 1px;
+	padding-right: 1px;
+	font-weight: bold;
+	color: darkblue;
+	cursor: pointer;
+}
+
+table.calendar td.calendarToday:hover {
+	background: orange;
+}
+
+/* @doc="Next or previous link in calendar." */
+table.calendar td.calendarLink {
+	border-bottom: 1px gray solid;
+	border-right: 1px gray solid;
+	padding-left: 2px;
+	padding-right: 2px;
+	background: #F0F0FF;
+	color: darkblue;
+	cursor: pointer;
+}
+
+table.calendar td.calendarLink:hover {
+	background: orange;
+}
+
+/* @doc="Disabled cells in calendar." */
+table.calendar td.calendarDisabled {
+	border-bottom: 1px gray solid;
+	border-right: 1px gray solid;
+	padding-left: 2px;
+	padding-right: 2px;
+	color: #808080;
+	background: #E0E0E0;
+}
+
+select.calendarSelect {
+	color: darkblue;
+}
+
+.calendarTimeDiv {
+	font-size: 0.8em;
+	padding: 1px;
+}
+
+/* @class="%ZEN.Component.checkbox" */
+/* @doc="Style for checkbox control." */
+.checkbox {
+}
+
+/* @doc="Caption for checkbox." */
+span.checkboxCaption {
+	cursor: pointer;
+	white-space: nowrap;
+}
+/* @class="%ZEN.Component.colorPicker" */
+/* @doc="Table wrapper for colorPicker." */
+table.colorPicker {
+	border: 1px darkblue solid;
+}
+
+/* @doc="Cell in colorPicker." */
+.colorPickerCell {
+	border: 2px #F0F0FF solid;
+	cursor: pointer;
+}
+
+/* @doc="Selected cell in colorPicker." */
+.colorPickerCellSelected {
+	border: 2px red solid;
+	cursor: pointer;
+}
+
+/* @class="%ZEN.Component.dateSelect" */
+
+/* @doc="Table used to layout elements within dateSelect." */
+.dateSelectTable {
+}
+
+/* @doc="Combobox within dateSelect." */
+.dateSelect {
+}
+
+/* @class="%ZEN.Component.dateText" */
+
+/* @doc="Text button in dateText." */
+.dateTextButton {
+	vertical-align: middle;
+	font-size: 0.7em;
+	height: 100%;
+}
+/* @class="%ZEN.Component.dynaGrid" */
+
+/* @doc="Wrapper div for dynaGrid." */
+.dynaGridWrapper {
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+/* @doc="Main table for dynaGrid." */
+table.dynaGrid {
+	background: white;
+	table-layout: fixed;
+	padding: 0px;
+	width: 100%;
+}
+
+/* @doc="Main table for disabled dynaGrid." */
+table.dynaGridDisabled {
+	background: #D0D0D0;
+	color: #606060;
+	table-layout: fixed;
+	padding: 0px;
+	width: 100%;
+}
+
+/* @doc="Label for dynaGrid." */
+table.dynaGrid th.dynaGridLabel,
+table.dynaGridDisabled th.dynaGridLabel {
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+	cursor: pointer;
+	background: #DDEEFF;
+	text-align: left;
+	white-space: nowrap;
+	font-style: italic;
+	overflow: hidden;
+}
+
+table.dynaGridDisabled th.dynaGridLabel {
+	background: #DDDDDD;
+}
+
+/* @doc="Column labels for dynaGrid." */
+table.dynaGrid th.dynaGridColumn,
+table.dynaGridDisabled th.dynaGridColumn {
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+	cursor: pointer;
+	background: #DDEEFF;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+table.dynaGridDisabled th.dynaGridColumn {
+	background: #DDDDDD;
+}
+
+/* @doc="Row labels for dynaGrid." */
+table.dynaGrid th.dynaGridRow,
+table.dynaGridDisabled th.dynaGridRow {
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+	cursor: pointer;
+	background: #DDEEFF;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+table.dynaGridDisabled th.dynaGridRow {
+	background: #DDDDDD;
+}
+
+/* @doc="Cells within dynaGrid." */
+table.dynaGrid td,
+table.dynaGridDisabled td {
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 0px;
+	margin: 0px;
+	cursor: pointer;
+	text-align: right;
+}
+
+table.dynaGrid td div, table.dynaGridDisabled td div {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	vertical-align: middle;
+ 	border: none;
+}
+
+/* @doc="Current cell with focus within dynaGrid." */
+table.dynaGrid td div.focus {
+	color: white;
+	background: #000040;
+	background-image: url(/csp/broker/images/grad-blue-10x30.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Selected cell within dynaGrid." */
+table.dynaGrid td div.selected {
+	background: #E0E0E0;
+}
+
+/* @doc="Input control within dynaGrid." */
+.dynaGridInput {
+ 	border: none;
+	background: #FFFFA0;
+}
+
+/* @doc="Input control (with focus) within dynaGrid." */
+.dynaGridInput:focus {
+	background: #FFFFE0;
+}
+
+/* @class="%ZEN.Component.objectInspector" */
+
+/* @doc="Main table for objectInspector." */
+table.inspectorGrid {
+	background: white;
+	table-layout: fixed;
+	padding: 0px;
+	width: 100%;
+}
+
+/* @doc="Label for objectInspector." */
+table.inspectorGrid th.dynaGridLabel {
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+	cursor: pointer;
+	background: #DDEEFF;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	color: black;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Column labels for objectInspector." */
+table.inspectorGrid th.dynaGridColumn {
+	border-bottom: 1px solid gray;
+	padding: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+	cursor: pointer;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	color: black;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Row labels for objectInspector." */
+table.inspectorGrid th.dynaGridRow {
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+	cursor: pointer;
+	background: #DDEEFF;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: normal;
+	color: darkblue;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Cells within objectInspector." */
+table.inspectorGrid td {
+	border-bottom: 1px solid gray;
+	padding: 0px;
+	margin: 0px;
+	cursor: pointer;
+	text-align: right;
+}
+
+table.inspectorGrid th.dynaGridLabel:hover,
+table.inspectorGrid th.dynaGridRow:hover,
+table.inspectorGrid th.dynaGridColumn:hover {
+	color: white;
+	background: #808080;
+}
+
+table.inspectorGrid td div {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* @doc="Current cell with focus within objectInspector." */
+table.inspectorGrid td div.focus {
+	color: white;
+	background: #000040;
+	background-image: url(/csp/broker/images/grad-blue-10x30.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Selected cell within objectInspector." */
+table.inspectorGrid td div.selected {
+	background: #E0E0E0;
+}
+
+.objectInspectorButton {
+	font-size: 0.8em;
+	height: 20px;
+	width: 20px;
+	background-image: url(/csp/broker/images/inspector.gif);
+	background-repeat: no-repeat;
+	background-color: #C0C0C0;
+}
+
+/* div containing popup button */
+.objectInspectorButtonDiv {
+	width: 100%;
+	height: 100%;
+	background: #000040;
+	background-image: url(/csp/broker/images/grad-blue-10x30.png);
+	background-repeat: repeat-x;
+}
+
+/* @class="%ZEN.Component.fileUpload" */
+/* @doc="Style for fileUpload control" */
+.fileUpload {
+}
+/* @class="%ZEN.Component.hidden" */
+/* @class="%ZEN.Component.image" */
+
+/* @doc="Style used for images with links." */
+.imageLink {
+	cursor: pointer;
+}
+
+/* @class="%ZEN.Component.label" */
+/* @doc="Style for labelText component." */
+.labelText {
+}
+/* @class="%ZEN.Component.listControl" */
+/* @class="%ZEN.Component.radioSet" */
+/* @doc="Span around radio button and caption." */ 
+.radioSetSpan {
+	white-space: nowrap;
+}
+
+/* @doc="Style for radio captions." */
+a.radioSetCaption {
+	vertical-align: top;
+	text-decoration: none;
+	color: black;
+}
+
+/* @doc="Style for disabled radio captions." */
+a.radioSetCaptionDisabled {
+	vertical-align: top;
+	text-decoration: none;
+	color: gray;
+}
+
+a.radioSetCaption:hover {
+	color: red;
+}
+
+a.radioSetCaption:link, .radioSetCaption:visited, .radioSetCaption:active {
+}
+
+a.radioSetCaptionDisabled:link, .radioSetCaptionDisabled:visited, .radioSetCaptionDisabled:active {
+}
+
+/* @class="%ZEN.Component.select" */
+/* @doc="Style for select." */
+.select {
+}
+/* @class="%ZEN.Component.radioButton" */
+/* @doc="Caption for radio button." */
+a.radioButtonCaption {
+	cursor: pointer;
+	white-space: nowrap;
+	text-decoration: none;
+	color: black;
+}
+
+/* @doc="Caption for disabled radio button." */
+a.radioButtonCaptionDisabled {
+	white-space: nowrap;
+	color: gray;
+	text-decoration: none;
+}
+
+a.radioButtonCaption:hover {
+	color: red;
+}
+
+a.radioButtonCaption:link, .radioButtonCaption:visited, .radioButtonCaption:active {
+}
+
+a.radioButtonCaptionDisabled:link, .radioButtonCaptionDisabled:visited, .radioButtonCaptionDisabled:active {
+}
+
+/* @class="%ZEN.Component.text" */
+/* @doc="Style for text (input)." */
+.text {
+}
+/* @class="%ZEN.Component.abstractComboBox" */
+
+/* @doc="Input box of combobox." */
+.comboboxInput {
+	background: white;
+	vertical-align: middle;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: none;
+}
+
+/* @doc="Input box of combobox in timer mode." */
+.comboboxInputTimer {
+}
+
+/* @doc="Wrapper for dropdown of combobox." */
+.comboboxDropDown {
+	position: absolute;
+	margin: 0px;
+	top: 0px;
+	left: 0px;
+	background: white;
+	border: 1px solid black;
+	width: 250px;
+	height: 250px;
+	overflow: scroll;
+}
+
+/* @doc="Image button in combobox." */
+.comboboxImgButton {
+	background: white;
+	vertical-align: middle;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: none;
+	border-right: 1px solid black;
+	/* attempt to scale button with text */
+	width: 1.1em;
+	height: 1.1em;
+}
+
+/* @doc="Text button in combobox." */
+.comboboxTextButton {
+	vertical-align: middle;
+	font-size: 0.75em;
+	border: 1px solid black;
+	height: 100%;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+}
+
+.comboboxTextButton:hover {
+	background: #404000;
+	background-image: url(/csp/broker/images/grad-yellow-10x100.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Table displaying combobox dropdown contents." */
+.comboboxTable {
+	background: white;
+	width: 100%;
+}
+
+.comboboxTable td {
+	white-space: nowrap;
+	padding-right: 3px;
+	padding-bottom: 2px;
+}
+
+/* @doc="Headers within combobox dropdown list." */
+.comboboxTable th {
+	white-space: nowrap;
+	padding-right: 3px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px solid #808080;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x30.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Item (tr) within combobox dropdown." */
+.comboboxItem {
+	width: 100%;
+	color: black;
+	cursor: pointer;
+}
+
+.comboboxItem a, .comboboxItemSelected a {
+	width: 100%;
+	display: block;
+	text-decoration: none;
+}
+
+/* we have to use an anchor so that IE will recognize :hover */
+.comboboxItem a:link, .comboboxItem a:active, .comboboxItem a:visited {
+	color: black;
+}
+
+.comboboxItemSelected a:link, .comboboxItemSelected a:active, .comboboxItemSelected a:visited {
+	color: white;
+}
+
+/* @doc="Mouse hover over selected item within combobox dropdown." */
+.comboboxItemSelected a:hover {
+	color: red;
+}
+
+/* @doc="Mouse hover over item within combobox dropdown." */
+.comboboxItem a:hover {
+	color: red;
+}
+
+/* @doc="Selected item (tr) within combobox dropdown." */
+.comboboxItemSelected {
+	width: 100%;
+	color: white;
+	cursor: pointer;
+	background: #000040;
+	background-image: url(/csp/broker/images/grad-blue-10x30.png);
+	background-repeat: repeat-x;
+	border: 1px solid black;
+}
+
+/* @doc="Style for loading message within combobox dropdown." */
+.comboboxLoading {
+	font-style: italic;
+	color: blue;
+}
+/* @class="%ZEN.Component.combobox" */
+/* @class="%ZEN.Component.dataCombo" */
+/* @class="%ZEN.Component.password" */
+/* @doc="Style for password (input)." */
+.password {
+}
+/* @class="%ZEN.Component.textarea" */
+/* @doc="Style for textarea." */
+.textarea {
+}
+/* @class="%ZEN.Component.csComboBoxItem" */
+/* @doc="Enclosing div for csComboBoxItem." */
+.csComboBoxItem {
+    position:absolute;
+    cursor:pointer;
+    font: 12px sans-serif;
+    background: white;
+    color: black;
+    height:20px;
+}
+/* @class="%ZEN.Component.csMenuSeparator" */
+/* @doc="Enclosing div for COMP_NAME." */
+.csMenuSeparator {
+    position:absolute;
+    cursor:pointer;
+}
+/* @class="%ZEN.Component.dynaTree" */
+
+/* @doc="div for node in tree." */
+.dynaTreeNode {
+	white-space: nowrap;
+	font-size: 12px;
+	font-family: Arial,Helvetica,sans-serif;
+	margin: 0px;
+	padding: 1px;
+}
+
+/* @doc="div for node in tree when showLines is true." */
+.dynaTreeNodeLines {
+	white-space: nowrap;
+	vertical-align: middle;
+	font-size: 12px;
+	height: 16px;
+	overflow: visible;
+	font-family: Arial,Helvetica,sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* @doc="expando image for node in tree." */
+.dynaTreeExp {
+	cursor: pointer;
+}
+
+/* @doc="icon image for node in tree." */
+.dynaTreeIcon {
+	cursor: pointer;
+}
+
+/* @doc="Caption for node (a) in tree." */
+.dynaTreeItem {
+	color: darkblue;
+	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+/* @doc="Current selected node (a) in tree." */
+.dynaTreeItemSelected {
+	color: black;
+	font-weight: bold;
+	background: #D0D0F0;
+	border: 1px dotted darkblue;
+	padding: 0px;
+	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.dynaTreeNode img, .dynaTreeNodeLines img {
+	border: none;
+}
+
+.dynaTreeItem:hover {
+	color: black;
+	background: #FFFAE7;
+	border: 1px dotted gray;
+}
+
+.dynaTreeItem:focus {
+	color: white;
+	background: darkblue;
+}
+/* @class="%ZEN.Component.dynaView" */
+
+/* @doc="Default style for dynaView: list mode." */
+table.dynaViewList {
+	background: white;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* @doc="Default style for dynaView: details mode." */
+table.dynaViewDetails {
+	background: white;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* @doc="Table header within dynaView: details mode." */
+table.dynaViewDetails th {
+	text-align: left;
+	color: black;
+	font-weight: bold;
+	padding: 2px;
+	border-bottom: 1px solid #808080;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x30.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Selectable item within dynaView." */
+.dynaViewItem {
+	vertical-align: middle;
+	white-space: nowrap;
+	color: black;
+	/* ie does not handle transparent */
+	border: 1px solid white;
+}
+
+/* @doc="Selected item in dynaView." */
+.dynaViewItemSelected {
+	vertical-align: middle;
+	white-space: nowrap;
+	color: black;
+	background: #E0E0E0;
+	border: 1px dotted #202060;
+}
+
+/* @doc="Selected item with focus in dynaView." */
+.dynaViewItemFocus {
+	vertical-align: middle;
+	white-space: nowrap;
+	color: white;
+	background: #000040;
+	background-image: url(/csp/broker/images/grad-blue-10x30.png);
+	background-repeat: repeat-x;
+	border: 1px solid black;
+}
+
+/* @doc="Image in dynaView." */
+.dynaViewItem img, .dynaViewItemSelected img, .dynaViewItemFocus img {
+	border: none;
+	vertical-align: middle;
+}
+
+.dynaViewItem:hover {
+	color: red;
+}
+
+/* @class="%ZEN.Component.helpBox" */
+div.helpBoxOn {
+	border: 1px solid black;
+	background: #AAAAFF;
+}
+
+div.helpBoxOff {
+	display: none;
+}
+
+div.helpBoxTitle {
+	font-weight: bold;
+	color: darkblue;
+}
+
+div.helpBoxMsg {
+	font-size: 0.8em;
+	color: darkblue;
+}
+/* @class="%ZEN.Component.html" */
+/* @class="%ZEN.Component.iframe" */
+/* @class="%ZEN.Component.link" */
+/* @doc="Style for link." */
+.link {
+}
+
+/* @doc="Style for disabled link." */
+.linkDisabled {
+	color: gray;
+	text-decoration: none;
+}
+/* @class="%ZEN.Component.locatorBar" */
+/* @doc="Table used for locator bar." */
+.locatorBarTable {
+	font-size: 10pt;
+	width: 100%;
+}
+
+/* @doc="Cell within locator bar." */
+.locatorBarTable td {
+	background: #A0B088;
+	background-image: url(/csp/broker/images/locatorgradient.png);
+	background-repeat: repeat-x;
+	border-bottom: 1px darkblue solid;
+	padding-bottom: 1px;
+}
+
+/* @doc="Div around locator links." */
+.locatorBarLinks {
+	font-size: 0.8em;
+	font-weight: bold;
+	color: darkblue;
+	text-decoration: none;
+	text-align: left;
+}
+
+/* @doc="Links in locator bar." */
+.locatorBarLinks a {
+	color: darkblue;
+	text-decoration: none;
+	padding-right: 1px;
+	padding-left: 1px;
+}
+
+.locatorBarLinks a:visited {
+	color: darkblue;
+}
+
+.locatorBarLinks a:hover {
+	color: red;
+	background: #FFFAE7;
+}
+
+/* @doc="Dropdown of jump links in locator bar." */
+.locatorBarSelect {
+	color: darkblue;
+	font-size: 0.8em;
+}
+/* @class="%ZEN.Component.menuItem" */
+
+/* @doc="Basic menu item." */
+a.menuItem {
+	display: block;
+	color: darkblue;
+	padding: 2px 3px 2px 3px;
+	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: none;
+	margin: 1px 1px 1px 1px;
+}
+
+/* @doc="Mouse over menu item." */
+a.menuItem:hover {
+	background: #FFFFA0;
+	border: 1px darkblue dotted;
+	margin: 0px 0px 0px 0px;
+}
+
+a.menuItem:link, a.menuItem:visited, a.menuItem:active {
+}
+
+/* @doc="Disabled menu item." */
+a.menuItemDisabled {
+	display: block;
+	color: gray;
+	background: #E0E0E0;
+	padding: 4px 4px 4px 4px;
+	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: none;
+	margin: 0px 0px 0px 0px;
+}
+
+a.menuItemDisabled:hover,a.menuItemDisabled:active,a.menuItemDisabled:link, a.menuItemDisabled:visited {
+}
+
+/* active menu item: this is used for top-level items
+	when their submenu is displayed.
+*/
+a.menuItemActive {
+	display: block;
+	color: darkblue;
+	padding: 2px 3px 2px 3px;
+	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	background: #FFFFA0;
+	border: 1px darkblue dotted;
+	margin: 0px 0px 0px 0px;
+}
+
+a.menuItemActive:hover,a.menuItemActive:active,a.menuItemActive:link, a.menuItemActive:visited {
+}
+
+/* @class="%ZEN.Component.menuSeparator" */
+/* @doc="Style for menu separator (hr)." */
+.menuSeparator {
+}
+/* @class="%ZEN.Component.objectBrowser" */
+
+/* outer div for object browser */
+div.objectBrowserDiv {
+	background: white;
+	border: 1px solid black;
+	padding: 2px;
+	overflow: auto;
+	height: 400px;
+}
+
+ul.objectBrowser {
+	list-style-type: disc;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-left: 0.5em;
+	padding-left: 0.5em;
+}
+
+/* @class="%ZEN.Component.simpleTablePane" */
+
+/* @doc="Main table for tablePane" */
+table.tpTable {
+	background: white;
+	border: 1px solid black;
+	font-family: arial;
+	width: 100%;
+	table-layout: fixed;
+	empty-cells: show;
+}
+
+/* @doc="Caption above table."*/
+table.tpTable caption { 
+	font-weight: bold;
+	text-align: left;
+	padding: 2px;
+	border: 1px solid black;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Column header." */
+table.tpTable th {
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	color: black;
+	font-weight: bold;
+	text-align: left;
+	padding: 2px;
+	overflow: hidden;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Selected column header." */
+table.tpTable th.tpHdrSelected {
+	color: white;
+	background: #F0F0F0;
+	background-image: url(/csp/broker/images/grad-gray2-10x100.png);
+	background-repeat: repeat-x;
+}
+
+table.tpTable td {
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 2px;
+	overflow: hidden;
+	/*text-overflow: ellipsis;*/
+}
+
+table.tpTable tr.tpSelected td {
+	border-top: 1px solid black;
+	border-bottom: 2px solid black;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+/* @doc="Selected row within table." */
+table.tpTable tr.tpSelected {
+	color: black;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-yellow-10x100.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Style used for table body outside of cells within the table." */
+.tpBody {
+	background: #DDDDDD;
+}
+
+/* @doc="Style used for table body outside of cells within the table when using fixed headers." */
+.tpBodyFixed {
+	background: #DDDDDD;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+ 
+/* @doc="Style for rows when not using zebra styling." */
+.tpRow {
+	color: darkblue;
+	background: white;
+}
+
+/* @doc="Style for odd-rows when using zebra styling." */
+.tpOdd {
+	color: darkblue;
+	background: white;
+}
+
+/* @doc="Style for even-rows when using zebra styling." */
+.tpEven {
+	color: darkblue;
+	background: #DDDDFF;
+}
+
+/* @doc="Cell containing a string value." */
+.tpStr {
+
+}
+
+/* @doc="Cell containing numeric value." */
+.tpNum {
+	text-align: right;
+}
+
+/* @doc="Cell containing the current row selector." */
+.tpSel {
+	text-align: center;
+	font-weight: bold;
+}
+
+/* @doc="Cell containing the row number." */
+.tpRNum {
+	text-align: right;
+}
+
+/* @doc="Cell containing a link." */
+.tpAction {
+}
+
+.tpAction a {
+	white-space: nowrap;
+	color: darkblue;
+}
+
+.tpAction a:hover {
+	color: darkblue;
+}
+
+.tpAction a:link {
+	color: darkblue;
+}
+
+.tpAction a:active {
+	color: darkblue;
+}
+
+/* @doc="Cell displaying No Results message." */
+.tpNoResults {
+	font-style: italic;
+	color: #202060;
+	background: white;
+}
+
+/* @doc="Table containing filter controls." */
+table.tpFilterLayout {
+	border: none;
+}
+
+/* @doc="Cell within table containing filter controls." */
+table.tpFilterLayout td {
+	border: none;
+	background: none;
+}
+
+/* @doc="Filter control." */
+.tpFilter {
+	/*width: 100%;*/
+	font-size: 0.8em;
+}
+
+/* @doc="Filter control for date values." */
+.tpFilterDate {
+	font-size: 0.8em;
+}
+
+/* @doc="Filter control with focus." */
+.tpFilter:focus {
+	background: #FFFFE0;
+}
+
+/* @doc="Label for filter control." */
+.tpFilterLabel {
+	font-size: 0.6em;
+	font-weight: normal;
+	text-align: right;
+}
+
+/* @doc="Button in filter section." */
+.tpFilterButton {
+	vertical-align: middle;
+	border: 1px solid black;
+	font-size: 0.6em;
+}
+
+.tpFilterButton:hover {
+	background: #FFFF80;
+}
+
+/* @class="%ZEN.Component.tablePane" */
+/* @class="%ZEN.Component.spacer" */
+/* @class="%ZEN.Component.tableNavigatorBar" */
+
+/* @doc="Table around navigator bar." */
+.tnbrTable {
+	border: 1px solid black;
+	background: #404040;
+	background-image: url(/csp/broker/images/grad-gray-10x100.png);
+	background-repeat: repeat-x;
+	padding: 1px;
+}
+
+/* @doc="Buttons within navigator bar." */
+.tnbrPagingButtons {
+	color: black;
+	background: white;
+	border: 1px solid #404040;
+	padding: 1px;
+	margin-left: 5px;
+	font-size: 0.7em;
+}
+
+/* @doc="Link within navigator bar." */
+.tnbrPageLink {
+	color: black;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* @doc="Disabled link within navigator bar." */
+.tnbrPageLinkDisabled {
+	color: #B0B0B0;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* @doc="Current page button within navigator bar." */
+.tnbrPageLinkCurr {
+	color: black;
+	font-weight: bold;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+
+	background: #404000;
+	background-image: url(/csp/broker/images/grad-yellow-10x100.png);
+	background-repeat: repeat-x;
+}
+
+/* @doc="Row count indicator." */
+.tnbrFound {
+	color: #202020;
+	font-weight: bold;
+	font-size: 0.7em;
+}
+
+/* @doc="Filter and page size control." */
+.tnbrFilter {
+	color: #202020;
+	padding-right: 10px;
+	font-weight: bold;
+	font-size: 0.7em;
+}
+
+.tnbrFilter input {
+	color: #202020;
+	font-size: 0.9em;
+	border: 1px solid #404040;
+}
+
+/* @class="%ZEN.Component.timer" */
+/* @class="%ZEN.Component.titleBox" */
+div.titleBoxTitle {
+	font-size: 1.0em;
+	font-weight: bold;
+	text-align: left;
+	padding: 2px;
+	border-bottom: 1px solid black;
+	white-space: nowrap;
+}
+
+div.titleBoxSubtitle {
+	font-size: 0.8em;
+	font-weight: normal;
+	text-align: left;
+	padding-top: 5px;
+	text-indent: 10px;
+}
+/* @class="%ZEN.Component.titlePane" */
+.titlePane {
+	color: darkblue;
+	background: #FFFAE7;
+	width: 100%;
+	padding: 3px;
+	border-bottom: 1px solid darkblue;
+	font-size: 1.4em;
+	font-family: verdana;
+	text-align: center;
+}
+/* EOF */
